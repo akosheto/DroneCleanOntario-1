@@ -14,7 +14,7 @@ export default function Hero() {
           poster={fallbackImage}
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="https://cdn.pixabay.com/video/2023/11/05/188057-881538748_large.mp4" type="video/mp4" />
+          <source src="https://video.wixstatic.com/video/ed9853_8eed36198d614af1b0162407dc48b8dc/1080p/mp4/file.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
       </div>

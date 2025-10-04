@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Plane, Menu, X } from "lucide-react";
+import { Sparkles, Plane, Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +26,10 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('home')}>
-            <Plane className={`w-7 h-7 ${isScrolled ? 'text-primary' : 'text-white'}`} />
+            <div className="relative">
+              <Plane className={`w-6 h-6 ${isScrolled ? 'text-primary' : 'text-white'}`} />
+              <Sparkles className={`w-3 h-3 ${isScrolled ? 'text-primary' : 'text-white'} absolute -top-0.5 -right-0.5`} />
+            </div>
             <span className={`font-bold text-lg ${isScrolled ? 'text-foreground' : 'text-white'}`}>
               Drone Clean Ontario
             </span>

@@ -1,4 +1,4 @@
-import { Plane, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Sparkles, Plane, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -7,7 +7,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Plane className="w-6 h-6 text-primary" />
+              <div className="relative">
+                <Plane className="w-5 h-5 text-primary" />
+                <Sparkles className="w-3 h-3 text-primary absolute -top-0.5 -right-0.5" />
+              </div>
               <span className="font-bold text-lg">Drone Clean Ontario</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">

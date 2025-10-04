@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Plane, Shield, CheckCircle } from "lucide-react";
+import { Sparkles, Plane } from "lucide-react";
 import fallbackImage from "@assets/stock_images/drone_flying_over_mo_33451e12.jpg";
 
 export default function Hero() {
@@ -16,25 +16,24 @@ export default function Hero() {
         >
           <source src="https://video.wixstatic.com/video/ed9853_8eed36198d614af1b0162407dc48b8dc/1080p/mp4/file.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-transparent" />
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
-        <div className="max-w-3xl">
-          <div className="flex items-center gap-3 mb-6">
-            <Plane className="w-8 h-8 text-primary" />
-            <span className="text-primary font-semibold tracking-wide">DRONE CLEAN ONTARIO</span>
+        <div className="max-w-2xl">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="relative">
+              <Plane className="w-7 h-7 text-primary" />
+              <Sparkles className="w-4 h-4 text-primary absolute -top-1 -right-1" />
+            </div>
+            <span className="text-primary font-semibold tracking-wide text-sm">DRONE CLEAN ONTARIO</span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Revolutionary Drone Cleaning for High-Rise Buildings
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            The Future of Building Maintenance
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-            Safe, efficient, and eco-friendly cleaning solutions for windows, solar panels, and hard-to-reach areas across the GTA.
-          </p>
-          
-          <div className="flex flex-wrap gap-4 mb-12">
+          <div className="flex flex-wrap gap-4">
             <Button 
               size="lg" 
               variant="default"
@@ -50,19 +49,8 @@ export default function Hero() {
               data-testid="button-watch-demo"
               onClick={() => console.log('Watch Demo clicked')}
             >
-              Watch Demo
+              Our Services
             </Button>
-          </div>
-          
-          <div className="flex flex-wrap gap-8">
-            <div className="flex items-center gap-3">
-              <CheckCircle className="w-6 h-6 text-primary" />
-              <span className="text-white font-medium">500+ Buildings Cleaned</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Shield className="w-6 h-6 text-primary" />
-              <span className="text-white font-medium">Licensed & Insured</span>
-            </div>
           </div>
         </div>
       </div>

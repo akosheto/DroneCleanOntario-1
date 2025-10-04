@@ -1,14 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Plane, Shield, CheckCircle } from "lucide-react";
-import heroImage from "@assets/generated_images/Drone_cleaning_Toronto_high-rise_85f4addd.png";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="https://cdn.coverr.co/videos/coverr-drone-flying-over-modern-city-buildings-6433/1080p.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
       </div>
       

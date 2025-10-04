@@ -1,4 +1,5 @@
-import { Sparkles, Plane, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -6,12 +7,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="relative">
-                <Plane className="w-5 h-5 text-primary" />
-                <Sparkles className="w-3 h-3 text-primary absolute -top-0.5 -right-0.5" />
-              </div>
-              <span className="font-bold text-lg">Drone Clean Ontario</span>
+            <div className="mb-4">
+              <Logo />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Ontario's premier drone-based commercial cleaning service, serving the GTA with innovative technology and professional excellence.

@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, Plane } from "lucide-react";
 import fallbackImage from "@assets/stock_images/drone_flying_over_mo_33451e12.jpg";
 
 export default function Hero() {
@@ -21,15 +20,7 @@ export default function Hero() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
         <div className="max-w-2xl">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="relative">
-              <Plane className="w-7 h-7 text-primary" />
-              <Sparkles className="w-4 h-4 text-primary absolute -top-1 -right-1" />
-            </div>
-            <span className="text-primary font-semibold tracking-wide text-sm">DRONE CLEAN ONTARIO</span>
-          </div>
-          
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
             The Future of Building Maintenance
           </h1>
           

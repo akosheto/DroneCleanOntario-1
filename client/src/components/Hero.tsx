@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Plane, Shield, CheckCircle } from "lucide-react";
+import fallbackImage from "@assets/stock_images/drone_flying_over_mo_33451e12.jpg";
 
 export default function Hero() {
   return (
@@ -10,9 +11,10 @@ export default function Hero() {
           loop
           muted
           playsInline
+          poster={fallbackImage}
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="https://cdn.coverr.co/videos/coverr-drone-flying-over-modern-city-buildings-6433/1080p.mp4" type="video/mp4" />
+          <source src="https://cdn.pixabay.com/video/2023/11/05/188057-881538748_large.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
       </div>
